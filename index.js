@@ -16,4 +16,4 @@ app.post('/items', (req, res) => {
 app.get('/items', (req, res) => res.json(items));
 
 const port = process.env.PORT || 10000;
-app.listen(port, () => console.log(`Server listening on ${port}`));
+app.listen(port, '0.0.0.0', () => console.log(`Server listening on ${port}`));
